@@ -1,5 +1,4 @@
 # demo-e-commerce-website
-![Image](https://github.com/user-attachments/assets/5d315c14-7495-4be6-89fb-465b8b178767)
 E-Commerce Website Description this is Demo
 e-commerce website is a feature-rich online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
 
