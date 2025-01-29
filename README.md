@@ -12,5 +12,5 @@ Search Functionality: A search bar feature helps users quickly find products, en
 Brand Promotions: The inclusion of multiple brand logos (Adidas, Nike, Zara, etc.) indicates a marketplace that features multiple well-known brands.
 Sale & Discounts: The presence of on-sale.html suggests a section dedicated to promotions and special discounts.
 Product Pages: Each product category has individual product.html and product.css files, ensuring a clean and structured display of products.
-Summary:
+# Summary:
 Your e-commerce website is designed to be user-friendly, visually appealing, and well-structured, offering a seamless shopping experience. With its multiple product categories, shopping cart, wishlist, and search functionality, it provides all the essential features of a modern online store.
