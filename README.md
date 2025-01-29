@@ -1,6 +1,6 @@
 # demo-e-commerce-website
-E-Commerce Website Description
-Your e-commerce website is a feature-rich online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
+E-Commerce Website Description this is Demo
+e-commerce website is a feature-rich online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
 
 Key Features of Your Website:
 
@@ -13,4 +13,4 @@ Brand Promotions: The inclusion of multiple brand logos (Adidas, Nike, Zara, etc
 Sale & Discounts: The presence of on-sale.html suggests a section dedicated to promotions and special discounts.
 Product Pages: Each product category has individual product.html and product.css files, ensuring a clean and structured display of products.
 # Summary:
-Your e-commerce website is designed to be user-friendly, visually appealing, and well-structured, offering a seamless shopping experience. With its multiple product categories, shopping cart, wishlist, and search functionality, it provides all the essential features of a modern online store.
+e-commerce website is designed to be user-friendly, visually appealing, and well-structured, offering a seamless shopping experience. With its multiple product categories, shopping cart, wishlist, and search functionality, it provides all the essential features of a modern online store.
