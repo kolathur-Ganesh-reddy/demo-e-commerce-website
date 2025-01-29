@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="wishlist.css">
+    <script defer src="wishlist.js"></script>
+    <script defer src="../navlist/navlist.js"></script>
+    <!--box-icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">v store</a>
+        <ul class="navlist">
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../shop/shop.html">shop</a></li>
+            <li><a href="../on-sale/on-sale.html">on sale</a></li>
+            <li class="categories-dropdown">
+          <a href="">Categories</a>
+          <div class="dropdown-content">
+            <a href="../electronics/electronics.html">Electronics</a>
+            <a href="../clothings/clothing.html">Clothing</a>
+            <a href="../home-appliances/home-appliances.html">Home Appliances</a> <!-- New link added -->
+            <a href="../books/books.html">Books</a>
+          </div>
+        </li>
+            <li><a href="../about/about.html">About</a></li>
+        </ul>
+        <div class="nav-right">
+            <!-- Search Form -->
+            <form id="search-form" action="../search-bar/search-results.html" method="GET">
+                <input
+                    type="text"
+                    name="query"
+                    id="search-input"
+                    placeholder="Search products..."
+                    required
+                />
+                <button type="submit"><i class="ri-search-line"></i></button>
+            </form>
+            <a href="../cart/cart.html"><i class="ri-shopping-cart-2-fill"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="back-button">
+        <a href="javascript:history.back()" class="back-link">Back</a>
+    </div> 
+        <h1>Wishlist:</h1>
+    <br>
+    <main>
+        <section id="wishlist-container">
+            <!-- Wishlist items will be dynamically added here -->
+        </section>
+        <div class="wishlist-summary">
+            <br>
+            <h2>Wishlist Summary</h2>
+            <p>Total: <span id="wishlist-total">$0.00</span></p> <!-- Update total section for wishlist -->
+            <button id="move-to-cart-button">Move to Cart</button> <!-- New button to move items to cart -->
+        </div>
+    </main>
+</body>
+</html>

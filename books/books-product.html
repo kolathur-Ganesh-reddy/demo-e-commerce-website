@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="product-book.css">
+    <script defer src="books.js"></script>
+    <script defer src="../cart/cart.js"></script>
+    <script defer src="../wishlist/wishlist.js"></script>
+    <!--box-icon-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">v store</a>
+        <ul class="navlist">
+            <li><a href="../shop/shop.html">shop</a></li>
+            <li><a href="../on-sale/on-sale.html">on sale</a></li>
+            <li class="categories-dropdown">
+          <a href="">Categories</a>
+          <div class="dropdown-content">
+            <a href="../electronics/electronics.html">Electronics</a>
+            <a href="../clothings/clothing.html">Clothing</a>
+            <a href="../home-appliances/home-appliances.html">Home Appliances</a> <!-- New link added -->
+            <a href="books.html">Books</a>
+          </div>
+        </li>
+            <li><a href="../about/about.html">About</a></li>
+        </ul>
+        <div class="nav-right">
+              <!-- Search Form -->
+              <form id="search-form" action="../search-bar/search-results.html" method="GET">
+                <input
+                    type="text"
+                    name="query"
+                    id="search-input"
+                    placeholder="Search products..."
+                    required
+                />
+                <button type="submit"><i class="ri-search-line"></i></button>
+            </form>
+            <a href="../cart/cart.html"><i class="ri-shopping-cart-2-fill"></i></a>
+            <a href="../wishlist/wishlist.html"> <i class="ri-heart-fill"></i></i></a>
+            <a href="#"><i class="ri-user-line"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+     <!--product-->
+     
+
+      
+       
+        <section id="book-detail" class="book-detail">
+            <div class="back-button">
+                <a href="javascript:history.back()" class="back-link">Back</a>
+            </div> 
+            <div id="book-container" class="book-detail-content">
+                <img class="book-image" id="book-image" src="" alt="Book Image">
+                <div data-id="books">
+                    <p><span class="book-name" id="book-name">Loading...</span></p>
+                    <p><strong></strong> <span id="book-description"></span></p>
+                    <p><strong></strong> <span class="book-price" id="book-price"></span><span class="mrp">MRP $499</span></p>
+                    <div class="stars">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-line"></i>
+                      <i>4.5/5</i>
+                  </div>
+                    <button class="btn-cart-btn" data-id="books id" data-name="Book Name" data-price="book price">add to Cart</button>
+                    <button class="btn-add-to-wishlist" id="add-to-wishlist-book1">wishlist</button>
+                </div>
+            </div>
+        </section>
+        
+    
+
+   
+      <!--related product-->
+  <section id="related-books" class="related-books">
+    <h2>Related Products</h2>
+    <div id="related-books-container" class="related-books-container"></div>
+  </section> 
+
+  <footer class="footer">
+    <!-- Logo and Address Section -->
+    <div class="logo-section">
+        <div class="logo-2">
+            <h1>V STORE</h1>
+        
+        </div>
+        <address>
+            Calista Wise 7292 Dictum Av. Antonio, India.<br>
+            (+01)-000-000-00<br>
+            demo@mail.com<br>
+            yourdemo.com
+        </address>
+        <div class="social-links">
+            <a class="Facebook" href="#">
+                <i class="ri-facebook-circle-fill"></i><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+            </a> <!-- Facebook Icon -->
+            <a class="Pinterest" href="#">
+                <i class="ri-pinterest-fill"></i><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+            </a> <!-- Pinterest Icon -->
+            <a class="Instagram" href="#">
+                <i class="ri-instagram-line"></i><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a> <!-- Instagram Icon -->
+        </div>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="links-section">
+        <ul>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Search Terms</a></li>
+            <li><a href="#">Order & Return </a></li>
+        </ul>
+    </div>
+
+    <!-- Customer Service Section -->
+    <div class="customer-section">
+        <ul>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Best Seller</a></li>
+            <li><a href="#">Manufacturers</a></li>
+        </ul>
+        
+    </div>
+
+    <!-- Subscribe Section -->
+   
+</footer>
+</body>
+</html>

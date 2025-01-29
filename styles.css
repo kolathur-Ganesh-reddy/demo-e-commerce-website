@@ -1,0 +1,1422 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #f0f0f0;
+    --other-color: #ffc633;
+    --second-color: #616060;
+    --h1-font: 5.5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.hr{
+    width: 30px;
+    height: 2px;
+    background-color: #fb774b;
+    align-items: center;
+    margin: auto;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb(32 33 26 /5%);
+    padding: 18px 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s;
+    
+}
+.logo{
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-color);
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    display: inline-block;
+    margin: 0 30px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all .6s;
+}
+.navlist a:hover{
+    transform: translateY(-4px);
+    color: var(--second-color);
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right a{
+    display: inline-block;
+    font-size: 22px;
+    color: var(--text-color);
+    margin: 0 20px;
+    transition: all .6s;
+}
+.nav-right a:hover{
+    transform: translateY(-5px) scale(1.1);
+   
+}
+/* Dropdown Menu for Categories */
+.categories-dropdown {
+  position: relative;
+}
+
+.categories-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #232f3e;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.categories-dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeInDropdown 0.3s ease-in-out; /* Fade-in dropdown */
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff9900;
+  border-radius: 5px;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    margin-left: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.cancel-btn {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Show cancel button when menu is active */
+.navlist.active + .cancel-btn {
+  display: block;
+}
+
+.brands{
+    padding: 30px 14%;
+    background: var(--text-color);
+    
+}
+.main-brands{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+section{
+    padding: 20px 14% 20px;
+}
+
+.home{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: url('./banners/banner1.jpg');
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+}
+.home-text{
+  text-align: left; /* Aligns text to the left */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 700px;
+  height: 100%;
+  margin-top: 100px;
+  
+ 
+}
+.headline {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
+  
+  .subheadline {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  
+  .website {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+  }
+.btn-A{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.btn-A:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.center-text{
+    text-align: center;
+}
+.center-text h2{
+    font-size: var(--h2-font);
+    font-weight: 700;
+}
+.n-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+.product-img{
+    overflow: hidden;
+    border-radius: 28px;
+    
+
+}
+.product-img img{
+    display: block;
+    width: 70%;
+    height: 70%;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.product-img :hover img{
+    transform: scale(1.1);
+    
+}
+.product-A .cart-cart{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    width: 48;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.product-A:hover .cart-cart{
+    transform: translateY(0);
+    opacity: 1;
+}
+.product-A h3{
+  color: #232f3e;
+  text-decoration: none;
+}
+.product-A h6{
+  color: #232f3e;
+  text-decoration: none;
+}
+
+.product-A i{
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+.container-B{
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.container-D{
+  text-align: center;
+  padding: 5px;
+  margin-bottom: -5%;
+  
+}
+.container-E{
+  text-align: center;
+  padding: 5px;
+  
+}
+
+
+.A-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+.product-B{
+    cursor: pointer;
+    
+}
+
+.product-B-img{
+    overflow: hidden;
+    border-radius: 28px;
+    margin-bottom: 15px;
+
+}
+.product-B-img img{
+    display: block;
+    width: 70%;
+    height: 70%;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.product-B-img :hover img{
+    transform: scale(1.1);
+}
+
+.product-B .cart-cart{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+    width: 48;
+    padding: 10px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 10px;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+.product-B:hover .cart-cart{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.product-B h5{
+  color: #232f3e;
+  text-decoration: none;
+}
+.product-B h4{
+  color: #232f3e;
+  text-decoration: none;
+}
+
+.product-B i{
+  font-size: 0.8rem;
+  color: goldenrod;
+}
+
+.stars{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+#banner-A{
+    background-image: url(./fashions/4_1024x.webp);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;  
+}
+
+#banner-A h4{
+    color: #f0f0f0;
+}
+#banner-A h1{
+    color: #fff;
+}
+
+#banner-A .button-A{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+#banner-A .button-A:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* watch */
+.watch-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center;
+    height: 80vh;
+    background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c88ad3102982829.5f4363fc69346.png') no-repeat center ; /* Add your background image here */
+    background-size: 80%; /* Decrease the background image size to 50% */
+    position: relative;
+    color: #fff;
+    width: 700px;
+    height: 700px;
+    right: 100px;
+    
+  }
+  
+  
+  .watch-button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    margin-left: 135px;
+    margin-top: 120px;
+  }
+  
+  
+  .product-watch-A {
+    display: grid;
+    grid-template-columns: repeat(2, 0.2fr);
+    margin-top: 50px;
+    position: absolute;
+    top: 285%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .A-watch {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px; /* Added padding */
+    height: auto; /* Ensure it adjusts to content */
+    max-width: 280px; /* Reduced width */
+    
+  }
+  
+  .A-watch a {
+    color: #232f3e;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font */
+  }
+  
+  .A-watch:hover {
+    transform: translateY(-8px); /* Reduced hover effect */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .A-watch img {
+    max-width: 100%;
+    height: 150px; /* Reduced image size */
+    object-fit: cover;
+  }
+  
+  .product-watchs {
+    padding: 10px; /* Adjusted padding for container */
+  }
+  
+  .brands-row{
+    display: grid;
+    grid-template-columns: repeat(4,0.5fr);
+  }
+  .brands-row img{
+    height: 200px;
+    width: 200px;
+  }
+  .adidas{
+   max-width: 70%;
+   max-height: 60%;
+   margin-top: 10%;
+  }
+  .zara{
+    max-width: 70%;
+    max-height: 60%;
+    margin-top: 10%;
+  }
+  .fashsion-name{
+    text-align: center;
+  }
+  .b-p{
+    text-align: center;
+    align-items: center;
+  }
+  .banner-B-img{
+    max-width: 100%;
+    max-height: 100%;
+    
+  }
+  .banner-row{
+    position: relative;
+    display: flex;
+    grid-template-columns: repeat(3,0fr);
+    padding: 0%;
+    margin: 0;
+  }
+  .banener-B{
+    width: 100%;
+  }
+  
+  #banener-B .one{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  #banener-B .one{
+    color: #f0f0f0;
+  }
+
+  #banener-B .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+  #banener-B .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178, 178, 0.7);
+  }
+  #banener-B .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+  }
+  #banener-B .one .details button:hover{
+    color: #fff;
+    border-bottom: #fff;
+  }
+
+  #banener-B .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #banener-B .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #banener-B .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+ 
+/* Add smooth fade-in animation for the page content */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Apply fade-in animation to body */
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Add slide-down effect for header */
+@keyframes slideDown {
+  from {
+      transform: translateY(-100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+header {
+  animation: slideDown 0.8s ease-in-out;
+}
+
+/* Add bounce animation for hover effect on buttons */
+
+
+.back-link:hover, 
+.navlist a:hover, 
+.nav-right a:hover {
+  animation: bounce 0.5s;
+}
+
+/* Smooth scale-up animation for product images on hover */
+@keyframes scaleUp {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+.product-img img:hover {
+  animation: scaleUp 0.5s forwards;
+}
+
+/* Add fade-in effect for dropdown menu */
+@keyframes fadeInDropdown {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.categories-dropdown:hover .dropdown-content {
+  animation: fadeInDropdown 0.3s ease-in-out;
+}
+
+/* Add hover effect animation for the cart button */
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.product-A:hover .cart-cart {
+  animation: slideUp 0.3s ease-in-out;
+}
+
+
+/* Add smooth fade-in for the entire page content */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+body {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Slide-in effect for sections */
+@keyframes slideIn {
+  from {
+      transform: translateX(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+section {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+
+
+/* Smooth hover glow effect for buttons */
+@keyframes glow {
+  0% {
+      box-shadow: 0 0 5px var(--other-color);
+  }
+  50% {
+      box-shadow: 0 0 20px var(--other-color);
+  }
+  100% {
+      box-shadow: 0 0 5px var(--other-color);
+  }
+}
+.btn-A:hover, 
+.watch-button:hover {
+  animation: glow 1.5s infinite;
+}
+
+/* Bounce effect for products on hover */
+@keyframes bounceEffect {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+.product-A:hover, 
+.product-B:hover {
+  animation: bounceEffect 0.8s ease-in-out;
+}
+
+/* Pulsating effect for cart button */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+      transform: scale(1);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+.product-A .cart-cart:hover, 
+.product-B .cart-cart:hover {
+  animation: pulse 1s infinite;
+}
+
+/* Slide-in effect for dropdown menus */
+@keyframes dropdownSlide {
+  from {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+.categories-dropdown:hover .dropdown-content {
+  animation: dropdownSlide 0.3s ease-in-out;
+}
+
+/* Add zoom-in animation for images */
+@keyframes zoomIn {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+.product-img img:hover, 
+.product-B-img img:hover {
+  animation: zoomIn 0.5s forwards;
+}
+
+/* Fade-in effect for headers */
+@keyframes fadeInText {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+header {
+  animation: fadeInText 0.8s ease-in-out;
+}
+.headline, 
+.subheadline, 
+.website {
+  animation: fadeInText 1s ease-in-out;
+}
+
+/* Floating animation for featured products */
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+.featured-product:hover {
+  animation: float 2s infinite;
+}
+@keyframes floatButton {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-3px);
+  }
+}
+@keyframes moveBanner {
+  from {
+      background-position: top center;
+  }
+  to {
+      background-position: bottom center;
+  }
+}
+
+
+/* Keyframes for zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Keyframes for zoom-out effect */
+@keyframes zoomOut {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Add zooming effect for product images */
+.product-A img:hover,
+.product-B img:hover {
+  animation: zoomIn 0.3s ease-in-out forwards;
+}
+
+/* Add zoom-in and zoom-out toggle on hover for featured products */
+.product-B:hover {
+  animation: zoomIn 0.3s ease-in-out forwards;
+}
+.product-B:not(:hover) {
+  animation: zoomOut 0.3s ease-in-out forwards;
+}
+
+/* Watch container zoom effect */
+.watch-container:hover {
+  animation: zoomIn 0.5s ease-in-out forwards;
+}
+.watch-container:not(:hover) {
+  animation: zoomOut 0.5s ease-in-out forwards;
+}
+
+ /* footer*/
+ 
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+}
+
+.footer .logo-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer .logo-section .logo-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.footer .logo-section address {
+  font-style: normal;
+  margin-top: 1px;
+  color: #333;
+}
+
+.footer .social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.footer .links-section,
+.footer .customer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-top: 20px;
+}
+
+.footer .links-section ul,
+.footer .customer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .links-section ul li,
+.footer .customer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer .links-section ul li a,
+.footer .customer-section ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer .subscribe-section {
+  flex: 1;
+  min-width: 250px;
+  margin-top: 20px;
+}
+
+.footer .subscribe-section input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer .subscribe-section button {
+  background-color: #ff6d6d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer .logo-section,
+  .footer .links-section,
+  .footer .customer-section,
+  .footer .subscribe-section {
+      text-align: center;
+  }
+}
+
+#search-form {
+  display: flex;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect on load */
+}
+
+/* Input Field Styles */
+#search-input {
+  flex: 1;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and focus effects */
+}
+
+/* Input Placeholder Styles */
+#search-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Input Field Hover and Focus Effects */
+#search-input:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.02); /* Slight scale-up on hover */
+}
+#search-input:focus {
+  background-color: #f0f0f0;
+  transform: scale(1.05); /* Slightly larger scale on focus */
+}
+/* Button Styles */
+#search-form button {
+  
+  color: #1a1919;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  position: relative;
+  z-index: 2;
+  border-radius: 40%;
+}
+
+/* Button Hover Effect */
+#search-form button:hover {
+  background-color: #333;
+  transform: translateY(-3px); /* Slight upward movement */
+  border-radius: 40%;
+}
+/* Icon Styles */
+#search-form button i {
+  font-size: 18px;
+  animation: pulse 2s infinite; /* Pulsing effect for the icon */
+}
+
+/* Background Animation */
+#search-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+      120deg,
+      rgba(0, 123, 255, 0.3),
+      rgba(0, 0, 255, 0.1),
+      rgba(0, 123, 255, 0.3)
+  );
+  z-index: 1;
+  transform: translateX(-100%);
+  animation: moveGradient 4s linear infinite; /* Moving gradient animation */
+}
+
+/* Keyframes for Animation Effects */
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Pulsing effect for the search icon */
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+/* Default styles for larger screens (Desktop) */
+#menu-icon {
+  display: none; /* Hidden on desktop */
+}
+
+.brands {
+  padding: 30px 14%;
+  background: var(--text-color);
+}
+
+.main-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+section {
+  padding: 20px 14% 20px;
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 768px) {
+  /* Adjust for small screens (tablets and below) */
+  .brands {
+      padding: 20px 5%;
+  }
+
+  .home {
+      height: 60vh;
+      background-position: center center;
+      margin-top: 35%;
+  }
+
+  .home-text {
+      margin-top: 20px;
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  .headline {
+      font-size: 20px;
+  }
+
+  .subheadline {
+      font-size: 32px;
+  }
+
+  .website {
+      font-size: 18px;
+  }
+
+  .n-content {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 items per row */
+  }
+
+  .product-img img {
+      width: 100%; /* Full width on small screens */
+      height: auto; /* Auto height */
+  }
+
+  /* Make menu icon visible on small screens */
+  #menu-icon {
+      display: block;
+      font-size: 30px;
+  }
+
+  .brands-row {
+      grid-template-columns: 1fr 1fr; /* 2 items per row for smaller screens */
+  }
+
+  .banner-row {
+      flex-direction: column; /* Stack banners vertically */
+  }
+
+  
+
+  /* Adjust the watch container for mobile */
+  .watch-container {
+      width: 100%;
+      height: 60vh;
+      background-position: center center;
+      background-size: cover;
+      right: 0;
+  }
+
+  .watch-button {
+      margin-left: 0;
+      margin-top: 90px;
+  }
+
+  /* Adjust font size for buttons */
+  .btn-A, .watch-button {
+      font-size: 14px;
+      padding: 4px 8px;
+  }
+
+  .product-A h3, .product-B h5 {
+      font-size: 16px;
+  }
+
+  .product-A h6, .product-B h4 {
+      font-size: 14px;
+  }
+
+  /* Adjust other grid layouts */
+  .A-content, .n-content {
+      grid-template-columns: 1fr 1fr; /* Display 2 items per row */
+  }
+}
+
+/* Further mobile-specific adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+  .home {
+      height: 50vh;
+      
+  }
+
+  .home-text {
+      margin-top: 10px;
+      padding: 10px;
+      max-width: 90%;
+  }
+
+  .subheadline {
+      font-size: 24px;
+  }
+
+  .product-img img {
+      width: 100%;
+  }
+
+  .product-A h3, .product-B h5 {
+      font-size: 14px;
+  }
+
+  .product-A h6, .product-B h4 {
+      font-size: 12px;
+  }
+
+  /* Adjust buttons */
+  .btn-A, .watch-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}
+
+
+/* Mobile Styles */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  .logo {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .navlist {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    background: var(--bg-color, #fff); /* Use fallback for background */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navlist.active {
+    display: flex;
+  }
+
+  .navlist a {
+    margin: 0; /* Removed margin to remove the gap */
+    padding: 10px; /* Adjust padding if necessary */
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .nav-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .nav-right form {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .nav-right form input {
+    flex-grow: 1;
+    padding: 8px;
+  }
+
+  /* Menu Icon */
+  #menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  /* Dropdown Menu for Categories */
+  .categories-dropdown {
+    position: relative;
+    margin: 0; /* Removed margin */
+  }
+
+  .categories-button {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: var(--primary-color, #007bff);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .categories-content {
+    display: none;
+    flex-direction: column;
+    background: #f9f9f9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .categories-content a {
+    padding: 10px;
+    text-align: left;
+    color: var(--text-color, #333);
+    border-bottom: none;
+    margin: 0; /* Removed margin */
+  }
+
+  .categories-dropdown.active .categories-content {
+    display: flex;
+  }
+
+  /* Animations */
+  .navlist,
+  .categories-content {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .navlist.active,
+  .categories-dropdown.active .categories-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  :root {
+      --h1-font: 1.8rem;
+      --h2-font: 1.5rem;
+      --p-font: 0.9rem;
+  }
+}
+
+
+
+
+/* Media Queries for Mobile Adjustments */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+ 
+
+  .product-watch-A {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row */
+      position: relative;
+      top: 400%; /* Adjust position for tablet */
+      left: 0; /* Adjust alignment */
+  }
+
+  .A-watch {
+      max-width: 250px; /* Smaller item size */
+  }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+ 
+
+  .product-watch-A {
+      grid-template-columns: 1fr; /* One item per row */
+      position: relative;
+      top: 500%; /* Adjust position for mobile */
+      left: 0;
+  }
+
+  .A-watch {
+      max-width: 100%; /* Full-width for each item */
+      margin-bottom: 20px; /* Add space between items */
+  }
+
+  .A-watch img {
+      height: 200px; /* Larger images for mobile */
+  }
+}
+
+
