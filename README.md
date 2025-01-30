@@ -6,7 +6,7 @@ E-Commerce Website this is Demo
 this website created using HTML ,CSS and Java Script codes.
 e-commerce website is a feature-rich online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
 
-Key Features of Website:
+#Key Features of Website:
 
 Homepage: A visually appealing index.html file, likely showcasing featured products, banners, and navigation to various categories.
 Product Categories: The site is divided into sections for books, clothing, electronics, home appliances, fashion, and more. Each category has dedicated HTML, CSS, and JavaScript files to display and style the content effectively.
