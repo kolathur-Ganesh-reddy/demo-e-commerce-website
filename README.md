@@ -4,7 +4,7 @@
 ![Image](https://github.com/user-attachments/assets/df1cc3be-1bec-4c04-b3c5-d2430c3246f0)
 E-Commerce Website this is Demo 
 this website created using HTML ,CSS and Java Script codes.
-e-commerce website is a feature-rich online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
+e-commerce website is a online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
 
 # Key Features of Website:
 
