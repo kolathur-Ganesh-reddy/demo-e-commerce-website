@@ -7,7 +7,7 @@ this website created using HTML ,CSS and Java Script codes.
 e-commerce website is a online shopping platform that provides a seamless experience for customers looking to buy a variety of products. The website structure indicates a well-organized marketplace with categories such as clothing, electronics, books, home appliances, and watches, among others.
 
 # Live Demo :
- https://kolathur-ganesh-reddy.github.io/demo-e-commerce-
+ https://kolathur-ganesh-reddy.github.io/demo-e-commerce-website/
 
 # Key Features of Website:
 
